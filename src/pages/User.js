@@ -71,12 +71,12 @@ export default function User() {
   });
   const { USERLIST } = values;
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     loadAllData();
-  //   }, 1000);
-  //   return () => clearInterval(interval);
-  // }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      loadAllData();
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   const loadAllData = () => {
     axios
