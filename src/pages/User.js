@@ -76,7 +76,7 @@ export default function User() {
       loadAllData();
     }, 1000);
     return () => clearInterval(interval);
-  }, []);
+  }, []); //eslint-disable-line react-hooks/exhaustive-deps
 
   const loadAllData = () => {
     axios
